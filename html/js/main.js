@@ -1101,8 +1101,8 @@
                     useCSS: true,
                     controlNav: dots,
                     directionNav: nav,
-                    prevText: "",
-                    nextText: "",
+                    prevText: true,
+                    nextText: true,
                     smoothHeight: false,
                     slideshowSpeed: speed,
                     animationSpeed: 600,
@@ -1120,7 +1120,7 @@
 
                         var length=$('.slides li').length;
 
-                        $('.flex-control-nav li a.flex-active').html('<span class="span-active">'+ current + '/' + length + '</span>' );
+                        $('.flex-control-nav li a.flex-active').html('<span class="span-active">'+ current + '</span>' );
 
 
 
@@ -1141,7 +1141,7 @@
 
                         var length=$('.slides li').length;
 
-                        $('.flex-control-nav li a.flex-active').html('<span class="span-active">'+ current + '/' + length + '</span>' );
+                        $('.flex-control-nav li a.flex-active').html('<span class="span-active">'+ current + '</span>' );
                     },
                     end: function (slider) {
                         slider.find('.intro_layers').children().each(function () {
@@ -1169,8 +1169,8 @@
                     useCSS: true,
                     controlNav: true,
                     directionNav: false,
-                    prevText: "",
-                    nextText: "",
+                    prevText: true,
+                    nextText: true,
                     smoothHeight: false,
                     slideshowSpeed: 5000,
                     animationSpeed: 800,
