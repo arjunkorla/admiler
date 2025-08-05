@@ -1168,12 +1168,12 @@
                     animation: "fade",
                     useCSS: true,
                     controlNav: true,
-                    directionNav: false,
+                    directionNav: true,
                     prevText: true,
                     nextText: true,
                     smoothHeight: false,
-                    slideshowSpeed: 5000,
-                    animationSpeed: 800,
+                    slideshowSpeed: 1000,
+                    animationSpeed: 500,
                 })
             });
         }
