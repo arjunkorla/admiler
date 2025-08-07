@@ -13,12 +13,86 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
 	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
-	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
 
 	<!-- Fav Icon -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <!-- End Fav Icon -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css">
+
+	  <style>
+    /* Custom container */
+    .my-slider-wrapper {
+      margin:0 auto 0 auto;
+      max-width:100%;
+	  height: auto;
+    }
+
+    /* Scope styles under .my-slider */
+    .my-slider .slides img {
+      width: 100%;
+      height: auto;
+      display: block;
+	  margin: 113px 0 0 0;
+    }
+
+    .my-slider .flex-control-nav {
+      bottom: -30px;
+	  display: none;
+    }
+
+    .my-slider .flex-direction-nav a {
+      font-size: 24px;
+      color: #333;
+      text-decoration: none;
+    }
+
+	.flexslider {
+	margin: 0 !important;
+    position: relative;
+    zoom: 1;
+	border: none !important;
+	background: none !important;
+	border-radius: 0 !important;
+    -webkit-box-shadow:none !important;
+    -moz-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+	.flex-direction-nav a:before {
+		font-family: flexslider-icon;
+		font-size: 30px !important;
+		display: inline-block;
+		content: '\f001';
+		margin: 5px 0 0 0;
+		color: rgba(255, 255, 255,.9);
+		text-shadow: none !important;
+	}
+
+	.flex-direction-nav a {
+    text-decoration: none;
+    display: block;
+    width: 40px !important;
+    height: 40px !important;
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    overflow:visible !important;
+    opacity: 0;
+    cursor: pointer;
+    color: rgba(0,0,0,.8);
+    text-shadow:none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+	
+  </style>
 
 </head>
 
@@ -34,7 +108,7 @@
 				<header class="page_header header-1 ds bg-transparent s-py-xl-20 s-py-10">
 					<div class="container-fluid">
 						<div class="row d-flex align-items-center justify-content-center">
-							<div class="col-xl-3 col-md-4 col-12 text-center">
+							<div class="col-xl-3 col-md-4 col-12">
 								<a href="index.html" class="logo">
 									<img src="images/logo2.png" alt="">
 								</a>
@@ -42,12 +116,12 @@
 							<div class="col-xl-6 col-1 text-right">
 								<!-- main nav start -->
 								<nav class="top-nav">
-									<ul class="nav sf-menu">
-										<li><a href="#box_wrapper">Home</a></li>
-										<li><a href="#trento">TRENTO</a></li>
-										<li><a href="#cerealitalia">CEREALITALIA </a></li>
-										<li><a href="#hosta">HOSTA</a></li>
-										<li><a href="#go-coffee">GO-COFFEE</a></li>
+									<ul class="nav sf-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+										<li><a href="#box_wrapper">Home</a> <span class="sf-menu-item-mobile-toggler"></span></li>
+										<li><a href="#trento">Trento</a></li>
+										<li><a href="#cerealitalia">Cerealitalia</a></li>
+										<li><a href="#hosta">Hosta</a></li>
+										<li><a href="#go-coffee">Go-Coffee</a></li>
 										<li><a href="#about">About US</a></li>
 										<li><a href="#contact">Contact Us</a></li>
 									</ul>
@@ -55,27 +129,19 @@
 							</div>
 						</div>
 					</div>
+					<span class="toggle_menu"><span>menu</span></span>
 				</header>
-				<span class="toggle_menu"><span></span></span>
 			</div>
 
-			<section class="page_slider">
-				<div class="flexslider" style="margin-top: 136px;">
-					<ul class="slides">
-						<li class="ds cover-image">
-							<img src="images/slide/trento.jpg" alt="Trento">
-						</li>
-						<li class="ds cover-image">
-							<img src="images/slide/cerealitalia.jpg" alt="Cerealitalia">
-						</li>
-						<li class="ds cover-image">
-							<img src="images/slide/hosta.jpg" alt="Hosta">
-						</li>
-						<li class="ds cover-image">
-							<img src="images/slide/go-coffee.jpg" alt="Go-Caffe">
-						</li>
+			<section class="my-slider-wrapper">
+				<div class="my-slider flexslider">
+					<ul class="my-slides slides">
+						<li><img src="images/slide/trento.jpg" alt="Trento"></li>
+						<li><img src="images/slide/cerealitalia.jpg" alt="Cerealitalia"></li>
+						<li><img src="images/slide/hosta.jpg" alt="Hosta"></li>
+						<li><img src="images/slide/go-coffee.jpg" alt="Go-Caffe"></li>
 					</ul>
-				</div> <!-- eof flexslider -->
+				</div>
 			</section>
 
 			<section class="ls s-py-60 text-center">
@@ -92,10 +158,10 @@
 						<div class="col-3"><img src="images/trento.png" alt=""></div>
 						<div class="col-3"><img src="images/go_caffe.png" alt=""></div>
 
-						<div class="col-3"><h6>ITALY</h6></div>
-						<div class="col-3"><h6>GERMANY &amp; ITALY</h6></div>
-						<div class="col-3"><h6>BRAZIL</h6></div>
-						<div class="col-3"><h6>ITALY</h6></div>
+						<div class="col-3"><h6 class="fs-16">ITALY</h6></div>
+						<div class="col-3"><h6 class="fs-16">GERMANY &amp; ITALY</h6></div>
+						<div class="col-3"><h6 class="fs-16">BRAZIL</h6></div>
+						<div class="col-3"><h6 class="fs-16">ITALY</h6></div>
 						
 					</div>
 				</div>
@@ -476,10 +542,32 @@
 		</div><!-- eof #box_wrapper -->
 	</div><!-- eof #canvas -->
 
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+<script>
+  $(window).on('load', function () {
+    $('.my-slider').flexslider({
+      animation: "slide",
+      direction: "horizontal",
+      slideshow: true,
+      slideshowSpeed: 3000,
+      animationSpeed: 600,
+      pauseOnHover: true,
+      controlNav: true,
+      directionNav: true,
+      prevText: "",
+      nextText: "",
+      smoothHeight: false
+    });
+  });
+</script>
 
-	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 	<script src="js/compressed.js"></script>
 	<script src="js/main.js"></script>
+
+	
+
 
 </body>
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlexSlider Horizontal Slideshow</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .flexslider {
+      margin: 50px auto;
+      max-width: 900px;
+    }
+    .flexslider .slides img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<section class="page_slider">
+  <div class="flexslider">
+    <ul class="slides">
+      <li><img src="images/slide/trento.jpg" alt="Trento"></li>
+      <li><img src="images/slide/cerealitalia.jpg" alt="Cerealitalia"></li>
+      <li><img src="images/slide/hosta.jpg" alt="Hosta"></li>
+      <li><img src="images/slide/go-coffee.jpg" alt="Go-Caffe"></li>
+    </ul>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+<script>
+  $(window).on('load', function () {
+    $('.flexslider').flexslider({
+      animation: "slide",             // Horizontal slide
+      direction: "horizontal",
+      slideshow: true,                // Auto slide
+      slideshowSpeed: 3000,           // 3 seconds
+      animationSpeed: 600,
+      pauseOnHover: true,
+      controlNav: true,               // Dots (set false to hide)
+      directionNav: true,             // Next/Prev arrows
+      prevText: "←",
+      nextText: "→",
+      smoothHeight: false
+    });
+  });
+</script>
+
+</body>
+</html>
