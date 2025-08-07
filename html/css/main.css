@@ -46,6 +46,10 @@ text-align:justify;
     .my-slider .slides img {
         margin: 90px 0 0 0 !important;
     }
+
+    .flex-direction-nav a{
+        top:55% !important
+    }
 }
 
 h6{font-size:20px;margin-bottom:1.5em;margin-top:2.5em}@media(max-width:991px){h1{font-size:2.8rem}h2{font-size:2.6rem}h3{font-size:2.1rem}h4{font-size:1.8rem}h5{font-size:1.6rem}h6{font-size:1.4rem}}@media(max-width:575px){h1{font-size:2.1rem}h2{font-size:2rem}h3{font-size:1.8rem}h4{font-size:1.6rem}h5{font-size:1.3rem}h6{font-size:1.2rem}}h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child,h6:first-child{margin-top:0}h1:last-child,h2:last-child,h3:last-child,h4:last-child,h5:last-child,h6:last-child{margin-bottom:0}p{line-height:1.5em;margin-bottom:1.5em}ul:last-child,ol:last-child,p:last-child{margin-bottom:0}ul,ol{list-style-position:inside}
