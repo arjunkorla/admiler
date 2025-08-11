@@ -27,13 +27,16 @@
     .my-slider-wrapper {
       margin:0 auto 0 auto;
       width:100%;
-  	  height:100vh;
+	  height: 100dvh;
+	  position: relative;
+	  overflow: hidden;
     }
 
     /* Scope styles under .my-slider */
     .my-slider .slides img {
-      width: 100%;
-      height: 90vmin;
+      width:100%;
+	  height: 110vh;
+	  aspect-ratio: 16 / 9;
       display: block;
 	  margin: 113px 0 0 0 !important;
     }
@@ -156,7 +159,7 @@
 						<div class="col-3"><img src="images/cerealitalia.png" alt=""></div>
 						<div class="col-3"><img src="images/hosta.png" alt=""></div>
 						<div class="col-3"><img src="images/trento.png" alt=""></div>
-						<div class="col-3"><img src="images/go_caffe.png" alt=""></div>
+						<div class="col-3" style="background: #b4a099; text-align: center;"><img src="images/go_caffe.png" alt=""></div>
 
 						<div class="col-3"><h6 class="fs-16">ITALY</h6></div>
 						<div class="col-3"><h6 class="fs-16">GERMANY &amp; ITALY</h6></div>
@@ -519,17 +522,6 @@
 										</div>
 										<p>
 											Hawalli, Block 4, Al Muthanna Street, 6th Floor, Yasmin Center
-										</p>
-									</li>
-
-									<li class="icon-inline">
-										<div class="icon-styled icon-top bordered round  fs-16">
-											<i class="fas fa-clock"></i>
-										</div>
-										<p>
-											Sun - Wed: 9am - 4pm<br>
-											Thu: 9am - 3pm<br>
-											Fri - Sat: off
 										</p>
 									</li>
 								</ul>
